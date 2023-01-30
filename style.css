@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+h1{
+    background-color: rgb(234, 231, 177);
+
+}
+
+h2{
+    background-color: rgb(97, 135, 110);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(60, 98, 85);
+    padding: 30px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    width: 80%;
+    font: 1.2em "Fira Sans", sans-serif ;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+a:link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+li a:visited{
+    text-decoration: none;
+    color: rgb(234, 231, 177);
+}
+li a:active{
+    font-size: 1.05em;
+}
+li a:hover{
+    text-decoration: underline;
+    color:rgb(166, 187, 141) ;
+}
+
+#sloth {
+    display: flex;
+    background-color: rgb(166, 187, 141);
+    text-transform:uppercase;
+    text-shadow: 1px 1px black;
+    padding: 10px;
+}
+.text>h2{
+    transition-property: rgb(234, 231, 177) rgb(60, 98, 85) 1em;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+}
+.text>h2:hover{
+    color: rgb(60, 98, 85) ;
+    font-size: 1.5rem;
+    background-color: rgb(234, 231, 177);
+}
+
+
+#emergency {
+    background-color: rgb(166, 187, 141);
+    padding: 10px;
+
+}
+.grid-container a:link{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.grid-container a:hover{
+    text-decoration: underline;
+    color:rgb(234, 231, 177);
+}
+.grid-container a:visited{
+    color:rgb(234, 231, 177) ;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:3px;
+    width:80%;
+    margin:0 auto;
+
+}
+
+.grid-item {
+    border:2px solid white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color: rgb(97, 135, 110);
+    text-shadow: 1px 1px black;
+    background-color: rgb(234, 231, 177);
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+form :not(button){
+    background-color:rgb(234, 231, 177) ;
+    border:4px rgb(97, 135, 110) solid;
+}
+input:focus, textarea:focus{
+    background-color:rgb(166, 187, 141);
+}
+button:focus{
+    background-color: rgb(234, 231, 177) ;
+}
+button:hover{
+    background-color:rgb(234, 231, 177) ;
+
+}
+button{
+    background-color: rgb(166, 187, 141);
+    border-radius: 50% ;
+    border: 3px solid rgb(234, 231, 177);
+    width:80px;
+    height: 80px;
+    font-size: large;
+    font-weight: bold;
+    animation: 3s linear 1s infinite alternate slidein;
+    
+}
+@keyframes slidein {
+    from {
+    transform: translateX(0%);
+}
+
+    to {
+    transform: translateX(100%);
+    }
+}
+button:active{
+    transform: translateY(4px);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contact{
+    background-color:rgb(60, 98, 85);
+    padding: 10px;
+}
+#home{
+    text-transform: capitalize;
+    text-shadow: 1px 1px green;
+    background-color:rgb(234, 231, 177);
+    padding: 10px;
+}
+#created{
+    background-color:rgb(97, 135, 110);
+}
+#slothimg{
+    height: 400px;
+    width: auto;
+    margin-left:700px;
+    
+}
+#githubimg{
+    width: 5rem;
+    height: auto;
+    
+}
